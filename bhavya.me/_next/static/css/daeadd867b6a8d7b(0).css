@@ -1,0 +1,96 @@
+@import"https://fonts.googleapis.com/css?family=Bitter:400,700";
+@import"https://fonts.googleapis.com/css2?family=Pacifico&display=swap";
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden
+}
+
+html.overlay {
+    overflow: hidden
+}
+
+svg {
+    pointer-events: none
+}
+
+body {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.4;
+    background: #091619;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    counter-reset: section;
+    padding: 0 0 0 6em
+}
+
+@media screen and (max-width:739px) {
+    body {
+        padding-left: 0
+    }
+}
+
+.overlay body {
+    max-height: 100%;
+    overflow: hidden
+}
+
+*,
+:after,
+:before {
+    box-sizing: inherit
+}
+
+a {
+    color: #4985fe;
+    text-decoration: none;
+    transition: color .3s ease-out
+}
+
+a:hover {
+    color: #7ca7fe
+}
+
+img[data-src] {
+    opacity: 0;
+    transition: opacity .3s ease-out
+}
+
+img[data-src].loaded {
+    opacity: 1
+}
+
+@font-face {
+    font-family: Codec;
+    font-display: fallback;
+    src: url(/_next/static/media/CodecCold-Heavy.147cb82a.eot);
+    src: url(/_next/static/media/CodecCold-Heavy.147cb82a.eot) format("embedded-opentype"), url(/_next/static/media/CodecCold-Heavy.d44b723c.woff2) format("woff2"), url(/_next/static/media/CodecCold-Heavy.868c6ffc.woff) format("woff"), url(/_next/static/media/CodecCold-Heavy.d3032588.ttf) format("truetype"), url(/_next/static/media/CodecCold-Heavy.54763b39.svg) format("svg")
+}
+
+body {
+    color: #f4f4f8;
+    font: normal 18px/1.6 Bitter, Cambria, Georgia, serif;
+    font-variant-ligatures: no-common-ligatures;
+    font-feature-settings: "calt" 0
+}
+
+@media screen and (max-width:1369px) {
+    body {
+        font-size: 16px
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Codec, Arial, Helvetica Neue, Helvetica, sans-serif;
+    line-height: 1.1;
+    letter-spacing: -1px
+}
